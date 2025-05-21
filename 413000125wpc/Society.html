@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>網路概論 社團活動</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #e3eaf0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+            min-height: 100vh;
+        }
+
+        
+        header {
+            grid-area: header;
+            border: 3px solid DodgerBlue;
+            text-align: center;
+            font-size: 28px;
+            color: DarkSlateGray;
+            padding: 15px;
+            margin: 20px;
+            background-color: #f5f9fc;
+        }
+
+        
+        nav {
+            grid-area: nav;
+            background-color: #5f9ea0;
+            padding: 10px 0; 
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0 10px; 
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 4px;
+        }
+
+        .nav-menu a:hover {
+            background-color: #4682B4;
+        }
+
+        
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: DarkRed;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        strong {
+            display: block;
+            font-size: 18px;
+            color: DarkGreen;
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        
+        .club-section {
+            width: 50%; 
+            background-color: white;
+            border: 1.5px solid #4682B4;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 20px auto;
+        }
+
+        .club-section h3 {
+            text-align: center;
+            color: DarkSlateGray;
+            margin-bottom: 20px;
+        }
+
+        .club-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .club-section li {
+            font-size: 18px;
+            color: darkgreen;
+            margin-bottom: 10px;
+        }
+
+        
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+            background-color: #f5f9fc;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>網路概論 413000125 王品超 自我介紹</header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="course.html">課表</a></li>
+                <li><a href="PinChao.html">自我介紹</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="club-section">
+                <h3>參加過的社團</h3>
+                <ul>
+                    <li>熱舞社</li>
+                    <li>園藝社</li>
+                    <li>桌球社</li>
+                </ul>
+            </div>
+
+        </main>
+
+        <footer>
+            社團活動頁面
+        </footer>
+    </div>
+</body>
+</html>
