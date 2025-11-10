@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>人物介紹</title>
+  <style>
+    body {
+      font-family: "微軟正黑體", sans-serif;
+      background-color: #fafafa;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    /* 外層容器，讓兩個按鈕水平排列 */
+    .button-row {
+      display: inline-block; /* 讓整個行寬度隨內容 */
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    /* 單一角色區塊 */
+    .role-block {
+      display: inline-block; /* 水平排列 */
+      vertical-align: top;
+      margin: 0 40px; /* 按鈕間距 */
+      text-align: center;
+    }
+
+    .big-button {
+      display: block; /* 占一行 */
+      padding: 40px 80px;
+      background-color: #666;
+      color: white;
+      font-size: 24px;
+      border-radius: 15px;
+      text-decoration: none;
+      margin-bottom: 10px; /* 按鈕和清單間距 */
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px; /* 圓點和文字距離 */
+      margin: 0 auto 40px; /* 置中整個清單 */
+      display: block;
+      width: fit-content;
+      text-align: left; /* 保留圓點在名字左側 */
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">首頁</a>
+  </nav>
+
+  <h1>人物介紹</h1>
+
+  <div class="button-row">
+    <!-- 男主角 -->
+    <div class="role-block">
+      <a href="page1-1.html" class="big-button">男主角</a>
+      <ul>
+        <li>楊祐寧</li>
+        <li>范少勳</li>
+        <li>屈中恆</li>
+      </ul>
+    </div>
+
+    <!-- 女主角 -->
+    <div class="role-block">
+      <a href="page1-2.html" class="big-button">女主角</a>
+      <ul>
+        <li>邵雨薇</li>
+        <li>宋芸樺</li>
+        <li>簡書嫚</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
