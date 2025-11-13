@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>人物介紹</title>
+  <title>人浮於愛｜人物介紹</title>
   <style>
     body {
       font-family: "微軟正黑體", sans-serif;
@@ -12,6 +12,7 @@
       padding: 0;
     }
 
+    /* 導覽列 */
     nav {
       background-color: #555;
       padding: 10px;
@@ -30,41 +31,42 @@
 
     h1 {
       margin-top: 40px;
+      color: #444;
     }
 
-    /* 外層容器，讓兩個按鈕水平排列 */
-    .button-row {
-      display: inline-block; /* 讓整個行寬度隨內容 */
-      text-align: center;
+    /* 兩個區塊水平排列 */
+    .button-container {
       margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
     }
 
-    /* 單一角色區塊 */
-    .role-block {
-      display: inline-block; /* 水平排列 */
-      vertical-align: top;
-      margin: 0 40px; /* 按鈕間距 */
-      text-align: center;
-    }
-
+    /* 按鈕樣式 */
     .big-button {
-      display: block; /* 占一行 */
+      display: block;
       padding: 40px 80px;
       background-color: #666;
       color: white;
       font-size: 24px;
       border-radius: 15px;
       text-decoration: none;
-      margin-bottom: 10px; /* 按鈕和清單間距 */
+      transition: 0.3s;
+      margin-bottom: 10px;
     }
 
+    .big-button:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    /* 名單置中 */
     ul {
       list-style: disc;
-      padding-left: 20px; /* 圓點和文字距離 */
-      margin: 0 auto 40px; /* 置中整個清單 */
-      display: block;
+      margin: 0 auto;
+      padding-left: 20px;
       width: fit-content;
-      text-align: left; /* 保留圓點在名字左側 */
+      text-align: left;
     }
 
     li {
@@ -76,13 +78,15 @@
 
   <nav>
     <a href="index.html">首頁</a>
+    <a href="page1.html">人物介紹</a>
+    <a href="page2.html">劇集介紹</a>
+    <a href="about.html">關於</a>
   </nav>
 
   <h1>人物介紹</h1>
 
-  <div class="button-row">
-    <!-- 男主角 -->
-    <div class="role-block">
+  <div class="button-container">
+    <div>
       <a href="page1-1.html" class="big-button">男主角</a>
       <ul>
         <li>楊祐寧</li>
@@ -91,8 +95,7 @@
       </ul>
     </div>
 
-    <!-- 女主角 -->
-    <div class="role-block">
+    <div>
       <a href="page1-2.html" class="big-button">女主角</a>
       <ul>
         <li>邵雨薇</li>

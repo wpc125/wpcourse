@@ -2,12 +2,15 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>劇集介紹｜播出時間</title>
+  <title>人浮於愛｜播出時間</title>
   <style>
     body {
       font-family: "微軟正黑體", sans-serif;
       background-color: #fafafa;
       color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
     /* 導覽列 */
@@ -20,31 +23,37 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      font-size: 16px;
+      margin: 0 15px;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: yellow;
     }
 
-    /* 表格 */
+    /* 表格統一設計 */
     table {
       width: 80%;
-      margin: 30px auto;
+      margin: 40px auto;
       border: 1px solid #ccc;
       border-collapse: collapse;
       background-color: #fff;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     caption {
       font-weight: bold;
-      margin-bottom: 5px;
+      margin: 15px 0;
+      font-size: 20px;
       color: #444;
     }
 
     th, td {
       border: 1px solid #ccc;
-      padding: 8px;
+      padding: 10px;
       text-align: center;
     }
 
@@ -59,27 +68,32 @@
     /* 集數表 */
     ol {
       width: 75%;
-      margin: 30px auto;
+      margin: 40px auto 60px;
       background-color: #fff;
-      padding: 15px 30px;
+      padding: 20px 40px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      line-height: 1.6;
+      border-radius: 8px;
+      line-height: 1.8;
+      text-align: left;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
     }
 
     ol li {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
+
   </style>
 </head>
 <body>
 
+  <!-- 導覽列 -->
   <nav>
     <a href="index.html">首頁</a>
     <a href="page2.html">劇集介紹</a>
     <a href="page2-1.html">內容簡介</a>
   </nav>
 
+  <!-- 表格 -->
   <table>
     <caption>電視頻道 播出時間</caption>
     <tr>
@@ -91,11 +105,11 @@
     <tr>
       <td rowspan="2">公視</td>
       <td rowspan="2">13台</td>
-      <td>每週六 21:00-23:00</td>
+      <td>每週六 21:00–23:00</td>
       <td>連播兩集</td>
     </tr>
     <tr>
-      <td>每週日 01:00-03:00</td>
+      <td>每週日 01:00–03:00</td>
       <td>連播兩集（重播）</td>
     </tr>
   </table>
@@ -123,6 +137,7 @@
     </tr>
   </table>
 
+  <!-- 集數列表 -->
   <ol>
     <li>第一集、第二集　10月25日 首播</li>
     <li>第三集、第四集　11月01日</li>
