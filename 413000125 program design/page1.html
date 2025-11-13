@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>人浮於愛｜人物介紹</title>
+  <style>
+    body {
+      font-family: "微軟正黑體", sans-serif;
+      background-color: #fafafa;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 導覽列 */
+    nav {
+      background-color: #555;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #444;
+    }
+
+    /* 兩個區塊水平排列 */
+    .button-container {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    /* 按鈕樣式 */
+    .big-button {
+      display: block;
+      padding: 40px 80px;
+      background-color: #666;
+      color: white;
+      font-size: 24px;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .big-button:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    /* 名單置中 */
+    ul {
+      list-style: disc;
+      margin: 0 auto;
+      padding-left: 20px;
+      width: fit-content;
+      text-align: left;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="page1.html">人物介紹</a>
+    <a href="page2.html">劇集介紹</a>
+    <a href="about.html">關於</a>
+  </nav>
+
+  <h1>人物介紹</h1>
+
+  <div class="button-container">
+    <div>
+      <a href="page1-1.html" class="big-button">男主角</a>
+      <ul>
+        <li>楊祐寧</li>
+        <li>范少勳</li>
+        <li>屈中恆</li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="page1-2.html" class="big-button">女主角</a>
+      <ul>
+        <li>邵雨薇</li>
+        <li>宋芸樺</li>
+        <li>簡書嫚</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
